@@ -8,10 +8,6 @@ sap.ui.jsview("sapui5_primeraaplicacion.masterView", {
 		return "sapui5_primeraaplicacion.masterView";
 	},
 
-	/** Is initially called once after the Controller has been instantiated. It is the place where the UI is constructed. 
-	* Since the Controller is given to this method, its event handlers can be attached right away. 
-	* @memberOf sapui5_primeraaplicacion.masterView
-	*/ 
 	createContent : function(oController) {
 		var boton1 = new sap.ui.commons.Button(
 				{
@@ -27,9 +23,17 @@ sap.ui.jsview("sapui5_primeraaplicacion.masterView", {
 					press: [oController.butt2, oController]
 					
 				});
-		
+			
+		var boton3 = new sap.ui.commons.Button(
+				{
+					text: "Prueba de boton3",
+					tooltip: "Esto es un test de tooltip",
+					press: [oController.butt3, oController]
+					
+				});
 		boton1.placeAt("content");
 		boton2.placeAt("content");
+		boton3.placeAt("content");
 	}
 
 });

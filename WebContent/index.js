@@ -3,9 +3,10 @@ sap.ui.define([
 
 ], function (Text) {
 	"use strict";
+	alert("UI5 is ready...");
 
 	new Text({
-		text: "Texto de js prueba"
+		text: "Hello World"
 	}).placeAt("content");
 
 });

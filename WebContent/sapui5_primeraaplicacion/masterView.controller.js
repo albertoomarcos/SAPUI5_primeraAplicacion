@@ -2,6 +2,7 @@ sap.ui.controller(
 		"sapui5_primeraaplicacion.masterView",
 		{
 
+
 	butt: function(){
 		alert("Alerta de prueba...");
 	},
